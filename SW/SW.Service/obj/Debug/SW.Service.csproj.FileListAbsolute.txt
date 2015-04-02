@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Service\bin\Debug\SW.Service.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Service\bin\Debug\SW.Service.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Service\bin\Debug\SW.Domain.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Service\bin\Debug\SW.Repository.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Service\bin\Debug\SW.Resources.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Service\bin\Debug\SW.Domain.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Service\bin\Debug\SW.Repository.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Service\bin\Debug\SW.Resources.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Service\obj\Debug\SW.Service.csprojResolveAssemblyReference.cache
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Service\obj\Debug\SW.Service.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Service\obj\Debug\SW.Service.pdb

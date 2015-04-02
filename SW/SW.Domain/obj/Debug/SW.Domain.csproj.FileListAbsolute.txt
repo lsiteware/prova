@@ -1,0 +1,7 @@
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\SW.Domain.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\SW.Domain.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\SW.Resources.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\SW.Resources.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\obj\Debug\SW.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\obj\Debug\SW.Domain.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\obj\Debug\SW.Domain.pdb
