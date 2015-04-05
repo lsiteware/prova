@@ -1,9 +1,16 @@
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\bin\Debug\SW.Repository.dll.config
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\bin\Debug\SW.Repository.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\bin\Debug\SW.Repository.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\bin\Debug\EntityFramework.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\bin\Debug\SW.Domain.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\bin\Debug\SW.Resources.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\bin\Debug\SW.Core.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\bin\Debug\SW.Domain.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\bin\Debug\SW.Resources.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\bin\Debug\EntityFramework.xml
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\bin\Debug\SW.Core.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\obj\Debug\SW.Repository.csprojResolveAssemblyReference.cache
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\obj\Debug\SW.Repository.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Repository\obj\Debug\SW.Repository.pdb

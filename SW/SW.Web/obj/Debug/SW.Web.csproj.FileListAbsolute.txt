@@ -1,6 +1,8 @@
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Web.dll.config
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Web.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Web.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\EntityFramework.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\EntityFramework.SqlServer.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\Newtonsoft.Json.dll
@@ -14,10 +16,13 @@ C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.Razor.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.WebPages.Deployment.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.WebPages.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Core.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Domain.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Repository.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Resources.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Service.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\EntityFramework.xml
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\EntityFramework.SqlServer.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\Newtonsoft.Json.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.Helpers.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.Mvc.xml
@@ -25,6 +30,7 @@ C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.Razor.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.WebPages.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Core.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\obj\Debug\SW.Web.csprojResolveAssemblyReference.cache
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\obj\Debug\SW.Web.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\obj\Debug\SW.Web.pdb
