@@ -1,4 +1,5 @@
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Core\bin\Debug\SW.Core.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Core\bin\Debug\SW.Core.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Core\obj\Debug\SW.Core.csprojResolveAssemblyReference.cache
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Core\obj\Debug\SW.Core.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Core\obj\Debug\SW.Core.pdb

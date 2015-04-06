@@ -6,7 +6,7 @@ using SW.Resources;
 namespace SW.Domain.Vendas
 {
     [Table("Produto")]
-    public class Produto : BaseEntity
+    public class Produto : EntidadeBase
     {
         [StringLength(100, ErrorMessageResourceName = "Erro_Validacao_Tamanho_Maximo_Excedido", ErrorMessageResourceType = typeof(MENSAGEM))]
         [Required(ErrorMessageResourceName = "Erro_Validacao_Campo_Obrigatorio", ErrorMessageResourceType = typeof(MENSAGEM))]

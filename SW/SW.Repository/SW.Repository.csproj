@@ -48,7 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstrato\RepositorioAbstrato.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vendas\RepositorioPromocao.cs" />
+    <Compile Include="Vendas\RepositorioProduto.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SW.Domain\SW.Domain.csproj">

@@ -49,7 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\SwDbContext.cs" />
-    <Compile Include="Base\BaseEntity.cs" />
+    <Compile Include="Base\EntidadeBase.cs" />
+    <Compile Include="Interfaces\Repositorio\Abstrato\IRepositorioAbstrato.cs" />
+    <Compile Include="Interfaces\Repositorio\Abstrato\IRepositorioAbstratoEscrita.cs" />
+    <Compile Include="Interfaces\Repositorio\Abstrato\IRepositorioAbstratoLeitura.cs" />
+    <Compile Include="Interfaces\Repositorio\Vendas\IRepositorioProduto.cs" />
+    <Compile Include="Interfaces\Repositorio\Vendas\IRepositorioPromocao.cs" />
     <Compile Include="Migrations\201504052136433_initial.cs" />
     <Compile Include="Migrations\201504052136433_initial.Designer.cs">
       <DependentUpon>201504052136433_initial.cs</DependentUpon>
@@ -74,10 +79,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\Repositorio\Abstrato\" />
-    <Folder Include="Interfaces\Repositorio\Vendas\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201504052136433_initial.resx">
       <DependentUpon>201504052136433_initial.cs</DependentUpon>
