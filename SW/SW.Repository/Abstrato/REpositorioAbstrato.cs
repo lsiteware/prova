@@ -98,7 +98,7 @@ namespace SW.Repository.Abstrato
 
         #endregion
 
-        #region Methods
+        #region Metodos
 
         protected IQueryable<TEntity> AplicarParametros(IQueryable<TEntity> query
             , IEnumerable<Expression<Func<TEntity, bool>>> parametros)
