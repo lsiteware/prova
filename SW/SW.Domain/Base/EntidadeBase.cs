@@ -1,16 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using SW.Core.Extensions;
-using SW.Domain.Interfaces.Repositorio.Abstrato;
 
 namespace SW.Domain.Base
 {
     public class EntidadeBase
     {
-        [NotMapped]
-        public static IRepositorioAbstrato<EntidadeBase, int> Repositorio { get; set; }
-
         [Key]
         public int Id { get; set; }
         
