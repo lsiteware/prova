@@ -10,7 +10,7 @@ namespace SW.Web.App_Start
         {
             ConfigurePromocaoMapping();
             ConfigureProdutoMapping();
-            Mapper.AssertConfigurationIsValid();
+            //Mapper.AssertConfigurationIsValid();
         }
 
         private static void ConfigureProdutoMapping()

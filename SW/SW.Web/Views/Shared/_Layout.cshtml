@@ -1,13 +1,28 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Optimization
+@using SW.Web.App_Start
+<!DOCTYPE html>
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    @Styles.Render(BundleConfig.STYLES_PATH)
+    @Scripts.Render(BundleConfig.SCRIPTS_PATH)
 </head>
-<body>
-    <div>
-        @RenderBody()
+<body lang="pt-BR">
+    <div class="container">
+        <div class="row">
+            <div class="center-block panel" style="width: 960px; margin-top: 60px; margin-bottom: 60px; height: 100%;">
+                <!-- BODY -->
+                <div class="panel-body">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="navbar-fixed-bottom">
+        Prova siteware - Leonardo Barcelos Marques
     </div>
 </body>
 </html>

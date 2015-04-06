@@ -132,4 +132,7 @@
   <data name="TipoCobranca" xml:space="preserve">
     <value>Tipo de cobrança</value>
   </data>
+  <data name="ValorFixo" xml:space="preserve">
+    <value>Valor fixo</value>
+  </data>
 </root>

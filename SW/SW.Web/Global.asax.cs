@@ -18,6 +18,8 @@ namespace SW.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             AutoMapperWebConfiguration.Configure();
+
+            BundleConfig.ConfigureBundles();
         }
     }
 }

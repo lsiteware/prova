@@ -2,6 +2,7 @@ C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\AutoMapper.Net4.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Web.dll.config
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Web.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Web.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\Antlr3.Runtime.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\AutoMapper.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\EntityFramework.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\EntityFramework.SqlServer.dll
@@ -20,16 +21,19 @@ C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Resources.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Service.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.Helpers.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.Mvc.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.Optimization.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.Razor.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.WebPages.Deployment.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.WebPages.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.WebPages.Razor.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\WebActivatorEx.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\WebGrease.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Core.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Domain.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Repository.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Resources.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\SW.Service.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\Antlr3.Runtime.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\AutoMapper.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\AutoMapper.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\AutoMapper.Net4.pdb
@@ -42,6 +46,7 @@ C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\Microsoft.Practices.Unity
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\Microsoft.Practices.Unity.Mvc.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\Newtonsoft.Json.xml
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.Optimization.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.Helpers.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.Mvc.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Web\bin\System.Web.Razor.xml

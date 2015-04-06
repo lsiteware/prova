@@ -25,5 +25,8 @@ namespace SW.Domain.Vendas.Entidades
         [Required(ErrorMessageResourceName = "Erro_Validacao_Campo_Obrigatorio", ErrorMessageResourceType = typeof(MENSAGEM))]
         [Display(Name = "TipoCobranca", ResourceType = typeof(PROPRIEDADE))]
         public PromocaoTipoCobranca TipoCobranca { get; set; }
+
+        [Display(Name = "ValorFixo", ResourceType = typeof(PROPRIEDADE))]
+        public decimal? ValorFixo { get; set; }
     }
 }

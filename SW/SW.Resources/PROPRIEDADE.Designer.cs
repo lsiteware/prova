@@ -104,5 +104,14 @@ namespace SW.Resources {
                 return ResourceManager.GetString("TipoCobranca", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Valor fixo.
+        /// </summary>
+        public static string ValorFixo {
+            get {
+                return ResourceManager.GetString("ValorFixo", resourceCulture);
+            }
+        }
     }
 }

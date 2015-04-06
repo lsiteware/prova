@@ -1,6 +1,54 @@
-﻿@{
+﻿@using SW.Resources
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>Index</h2>
+<fieldset>
+    <legend><h2 id="h-mostrar-descricao" style="cursor:pointer;">@TITULO.MOSTRAR_DESCRICAO_PROVA</h2></legend>
+    <div id="dv-desc-prova" style="display: none;">
+        <ul>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+            <li>TEste</li>
+        </ul>
+    </div>
+</fieldset>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#h-mostrar-descricao").click(function () {
+            if ($('#dv-desc-prova').css('display') == 'none') {
+                $(this).html('@TITULO.ESCONDER_DESCRICAO_PROVA');
+            } else {
+                $(this).html('@TITULO.MOSTRAR_DESCRICAO_PROVA');
+            }
+            $("#dv-desc-prova").toggle('slow');
+        });
+    });
+</script>

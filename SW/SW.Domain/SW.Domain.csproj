@@ -66,6 +66,10 @@
     <Compile Include="Migrations\201504052136433_initial.Designer.cs">
       <DependentUpon>201504052136433_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504060214175_valor_fixo_promocao.cs" />
+    <Compile Include="Migrations\201504060214175_valor_fixo_promocao.Designer.cs">
+      <DependentUpon>201504060214175_valor_fixo_promocao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vendas\Enumeradores\PromocaoTipoCobranca.cs" />
@@ -94,6 +98,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201504052136433_initial.resx">
       <DependentUpon>201504052136433_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504060214175_valor_fixo_promocao.resx">
+      <DependentUpon>201504060214175_valor_fixo_promocao.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
