@@ -10,8 +10,10 @@ namespace SW.Domain.Vendas.ViewModels
     {
         public int Id
         {
-            get { return int.Parse(Encriptar.DesencriptarString(ConfigurationManager.AppSettings["ChaveCriptografia"], IdSerializado)); }
-            set { IdSerializado = Encriptar.DesencriptarString(ConfigurationManager.AppSettings["ChaveCriptografia"], value.ToString()); }
+            get
+            {
+                return string.IsNullOrWhiteSpace(IdSerializado) ? 0 : int.Parse(Encriptar.DesencriptarString(ConfigurationManager.AppSettings["ChaveCriptografia"], IdSerializado));
+            }
         }
 
         public string IdSerializado { get; set; }

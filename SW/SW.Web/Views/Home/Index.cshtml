@@ -40,7 +40,33 @@
         </ul>
     </div>
 </fieldset>
+<fieldset>
+    <legend><h3>@TITULO.LISTAGEM_PRODUTOS</h3></legend>
+    <div id="dv-listagem-produtos">
+    </div>
+</fieldset>
+<fieldset>
+    <legend><h3>@TITULO.LISTAGEM_PROMOCOES</h3></legend>
+    <div id="dv-listagem-promocoes">
+    </div>
+</fieldset>
 <script type="text/javascript">
+    function InitLoading(container) {
+        $(container).empty();
+        $(container).append("<div class='big-loading'></div>");
+    }
+    function CarregarListagemProdutos() {
+        InitLoading($("#dv-listagem-produtos"));
+        $("#dv-listagem-produtos").load('@Url.Action("_PartialListagem", "Produto")', null, function () {
+            $("#dv-listagem-produtos div.big-loading").remove();
+        });
+    }
+    function CarregarListagemPromocoes() {
+        InitLoading($("#dv-listagem-promocoes"));
+        $("#dv-listagem-promocoes").load('@Url.Action("_PartialListagem", "Promocao")', null, function() {
+            $("#dv-listagem-promocoes div.big-loading").remove();
+        });
+    }
     $(document).ready(function () {
         $("#h-mostrar-descricao").click(function () {
             if ($('#dv-desc-prova').css('display') == 'none') {
@@ -50,5 +76,7 @@
             }
             $("#dv-desc-prova").toggle('slow');
         });
+        CarregarListagemProdutos();
+        CarregarListagemPromocoes();
     });
 </script>

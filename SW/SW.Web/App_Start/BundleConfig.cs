@@ -19,7 +19,8 @@ namespace SW.Web.App_Start
 
             BundleTable.Bundles.Add(new StyleBundle(STYLES_PATH)
                 .Include("~/Content/bootstrap.min.css")
-                .Include("~/Content/bootstrap-theme.min.css"));
+                .Include("~/Content/bootstrap-theme.min.css")
+                .Include("~/Content/main.css"));
         }
     }
 }

@@ -1,1 +1,21 @@
-﻿@model ListagemPromocaoViewModel
+﻿@using SW.Resources
+@model ListagemPromocaoViewModel
+<table class="table table-striped table-bordered">
+    <thead>
+    <th>@TITULO.ACOES</th>
+    <th>@PROPRIEDADE.Nome</th>
+    <th>@PROPRIEDADE.QuantidadeProdutos</th>
+    <th>@PROPRIEDADE.TipoCobranca</th>
+    </thead>
+    <tbody>
+        @foreach (var prod in Model.Lista)
+        {
+            <tr>
+                <th><a href="javascript:void(0);" class="glyphicon glyphicon-pencil" style="cursor:pointer;"></a>&nbsp;&nbsp;<a href="javascript:void(0);" class="glyphicon glyphicon-remove" style="cursor:pointer;"></a></th>
+                <th>@prod.Nome</th>
+                <th>@prod.QuantidadeProdutos</th>
+                <th>@prod.TipoCobranca</th>
+            </tr>
+        }
+    </tbody>
+</table>

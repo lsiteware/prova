@@ -4,6 +4,11 @@ namespace SW.Domain.Vendas.ViewModels
 {
     public class ListagemPromocaoViewModel
     {
-        public IList<PromocaoViewModel> Lista { get; set; }
+        public List<PromocaoViewModel> Lista { get; set; }
+
+        public ListagemPromocaoViewModel()
+        {
+            Lista = new List<PromocaoViewModel>();
+        }
     }
 }

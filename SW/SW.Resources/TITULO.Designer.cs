@@ -61,11 +61,38 @@ namespace SW.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ações.
+        /// </summary>
+        public static string ACOES {
+            get {
+                return ResourceManager.GetString("ACOES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Descrição [Esconder].
         /// </summary>
         public static string ESCONDER_DESCRICAO_PROVA {
             get {
                 return ResourceManager.GetString("ESCONDER_DESCRICAO_PROVA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Listagem de produtos.
+        /// </summary>
+        public static string LISTAGEM_PRODUTOS {
+            get {
+                return ResourceManager.GetString("LISTAGEM_PRODUTOS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Listagem de promoções.
+        /// </summary>
+        public static string LISTAGEM_PROMOCOES {
+            get {
+                return ResourceManager.GetString("LISTAGEM_PROMOCOES", resourceCulture);
             }
         }
         

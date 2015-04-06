@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ACOES" xml:space="preserve">
+    <value>Ações</value>
+  </data>
   <data name="ESCONDER_DESCRICAO_PROVA" xml:space="preserve">
     <value>Descrição [Esconder]</value>
+  </data>
+  <data name="LISTAGEM_PRODUTOS" xml:space="preserve">
+    <value>Listagem de produtos</value>
+  </data>
+  <data name="LISTAGEM_PROMOCOES" xml:space="preserve">
+    <value>Listagem de promoções</value>
   </data>
   <data name="MOSTRAR_DESCRICAO_PROVA" xml:space="preserve">
     <value>Descrição [Mostrar]</value>

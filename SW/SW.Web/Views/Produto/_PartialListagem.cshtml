@@ -1,1 +1,23 @@
-﻿@model ListagemProdutoViewModel
+﻿@using System.Globalization
+@using SW.Resources
+@model ListagemProdutoViewModel
+<table class="table table-striped table-bordered">
+    <thead>
+    <th>@TITULO.ACOES</th>
+    <th>@PROPRIEDADE.Nome</th>
+    <th>@PROPRIEDADE.Preco</th>
+    <th>@PROPRIEDADE.PromocaoAtiva</th>
+    </thead>
+    <tbody>
+        @foreach (var prod in Model.Lista)
+        {
+            var promocaoAtiva = prod.PromocaoAtiva == null ? "-" : prod.PromocaoAtiva.Nome;
+            <tr>
+                <th><a class="glyphicon glyphicon-pencil" onclick="javascript:void (0)" style="cursor:pointer;"></a>&nbsp;&nbsp;<a class="glyphicon glyphicon-remove" onclick="javascript: void (0);" style="cursor:pointer;"></a></th>
+                <th>@prod.Nome</th>
+                <th>@prod.Preco.ToString("C", new CultureInfo("pt-BR"))</th>
+                <th>@promocaoAtiva</th>
+            </tr>
+        }
+    </tbody>
+</table>

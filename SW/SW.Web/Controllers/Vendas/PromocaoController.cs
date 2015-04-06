@@ -11,6 +11,7 @@ namespace SW.Web.Controllers.Vendas
 
         public ActionResult _PartialListagem()
         {
+            System.Threading.Thread.Sleep(10000);
             return View(ServicoPromocao.FindListagem());
         }
     }

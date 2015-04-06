@@ -4,6 +4,11 @@ namespace SW.Domain.Vendas.ViewModels
 {
     public class ListagemProdutoViewModel
     {
-        public IList<ProdutoViewModel> Lista { get; set; }
+        public List<ProdutoViewModel> Lista { get; set; }
+
+        public ListagemProdutoViewModel()
+        {
+            Lista = new List<ProdutoViewModel>();
+        }
     }
 }
