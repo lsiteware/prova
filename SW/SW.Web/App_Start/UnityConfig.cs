@@ -3,7 +3,7 @@ using System.Data.Entity;
 using Microsoft.Practices.Unity;
 using SW.Domain.Context;
 using SW.Domain.Interfaces.Repositorio.Vendas;
-using SW.Domain.Vendas;
+using SW.Domain.Vendas.Entidades;
 using SW.Repository.Vendas;
 using SW.Service.Vendas;
 

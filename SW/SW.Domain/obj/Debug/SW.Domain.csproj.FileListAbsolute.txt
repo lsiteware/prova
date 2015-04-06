@@ -1,12 +1,17 @@
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\AutoMapper.Net4.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\SW.Domain.dll.config
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\SW.Domain.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\SW.Domain.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\AutoMapper.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\EntityFramework.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\SW.Core.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\SW.Resources.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\SW.Core.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\SW.Resources.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\AutoMapper.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\AutoMapper.xml
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\AutoMapper.Net4.pdb
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\EntityFramework.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\obj\Debug\SW.Domain.csprojResolveAssemblyReference.cache

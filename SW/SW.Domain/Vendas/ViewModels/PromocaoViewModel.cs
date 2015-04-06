@@ -1,16 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using SW.Domain.Base;
-using SW.Domain.Interfaces.Repositorio.Vendas;
+using System.Configuration;
+using SW.Core.Utils;
+using SW.Domain.Vendas.Enumeradores;
 using SW.Resources;
 
-namespace SW.Domain.Vendas
+namespace SW.Domain.Vendas.ViewModels
 {
-    [Table("Promocao")]
-    public class Promocao : EntidadeBase
+    public class PromocaoViewModel
     {
-        [NotMapped]
-        public static IRepositorioPromocao Repositorio { get; set; }
+        public int Id
+        {
+            get { return int.Parse(Encriptar.DesencriptarString(ConfigurationManager.AppSettings["ChaveCriptografia"], IdSerializado)); }
+            set { IdSerializado = Encriptar.DesencriptarString(ConfigurationManager.AppSettings["ChaveCriptografia"], value.ToString()); }
+        }
+
+        public string IdSerializado { get; set; }
 
         [StringLength(100, ErrorMessageResourceName = "Erro_Validacao_Tamanho_Maximo_Excedido", ErrorMessageResourceType = typeof(MENSAGEM))]
         [Required(ErrorMessageResourceName = "Erro_Validacao_Campo_Obrigatorio", ErrorMessageResourceType = typeof(MENSAGEM))]

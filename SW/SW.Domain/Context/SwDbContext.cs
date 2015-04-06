@@ -1,5 +1,5 @@
 ﻿using System.Data.Entity;
-using SW.Domain.Vendas;
+using SW.Domain.Vendas.Entidades;
 
 namespace SW.Domain.Context
 {

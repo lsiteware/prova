@@ -1,5 +1,5 @@
 ﻿
-namespace SW.Domain.Vendas
+namespace SW.Domain.Vendas.Enumeradores
 {
     public enum PromocaoTipoCobranca
     {

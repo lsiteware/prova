@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -40,6 +46,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,9 +68,13 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vendas\Enum.cs" />
-    <Compile Include="Vendas\Produto.cs" />
-    <Compile Include="Vendas\Promocao.cs" />
+    <Compile Include="Vendas\Enumeradores\PromocaoTipoCobranca.cs" />
+    <Compile Include="Vendas\Entidades\Produto.cs" />
+    <Compile Include="Vendas\Entidades\Promocao.cs" />
+    <Compile Include="Vendas\ViewModels\ListagemPromocaoViewModel.cs" />
+    <Compile Include="Vendas\ViewModels\ListagemProdutoViewModel.cs" />
+    <Compile Include="Vendas\ViewModels\ProdutoViewModel.cs" />
+    <Compile Include="Vendas\ViewModels\PromocaoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SW.Core\SW.Core.csproj">
@@ -93,6 +104,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
+  <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
