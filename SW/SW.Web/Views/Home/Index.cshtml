@@ -50,6 +50,23 @@
     <div id="dv-listagem-promocoes">
     </div>
 </fieldset>
+<!-- Modal de confirmação genérico -->
+<div class="modal fade" id="modal-confirmacao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modal-confirmacao-titulo"></h4>
+            </div>
+            <div id="modal-confirmacao-body" class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btn-confirmacao" class="btn btn-primary btn-success" data-dismiss="modal">@ACAO.CONFIRMAR</button>
+                <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">@ACAO.CANCELAR</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script type="text/javascript">
     function InitLoading(container) {
         $(container).empty();
@@ -63,8 +80,38 @@
     }
     function CarregarListagemPromocoes() {
         InitLoading($("#dv-listagem-promocoes"));
-        $("#dv-listagem-promocoes").load('@Url.Action("_PartialListagem", "Promocao")', null, function() {
+        $("#dv-listagem-promocoes").load('@Url.Action("_PartialListagem", "Promocao")', null, function () {
             $("#dv-listagem-promocoes div.big-loading").remove();
+        });
+    }
+    function ConfiguraModalConfirmacaoExcluirProduto(id, nome) {
+        $("#btn-confirmacao").unbind('click');
+        $("#btn-confirmacao").click(function () {
+            ConfirmacaoExcluirProduto(id);
+        });
+        $("#modal-confirmacao-body").html('@MENSAGEM.CONFIRMACAO_EXCLUSAO_PRODUTO ' + nome + "\"?");
+    }
+    function ConfirmacaoExcluirProduto(id) {
+        var url = '@Url.Action("ExcluirProduto", "Produto")';
+        $.ajax({
+            type: "GET",
+            url: url,
+            data: { id: id }
+        });
+    }
+    function ConfiguraModalConfirmacaoExcluirPromocao(id, nome) {
+        $("#btn-confirmacao").unbind('click');
+        $("#btn-confirmacao").click(function () {
+            ConfirmacaoExcluirPromocao(id);
+        });
+        $("#modal-confirmacao-body").html('@MENSAGEM.CONFIRMACAO_EXCLUSAO_PROMOCAO' + nome + "\"?");
+    }
+    function ConfirmacaoExcluirPromocao(id) {
+        var url = '@Url.Action("ExcluirPromocao", "Promocao")';
+        $.ajax({
+            type: "GET",
+            url: url,
+            data: { id: id }
         });
     }
     $(document).ready(function () {

@@ -61,20 +61,56 @@ namespace SW.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Confirma a exclusão do produto &quot;.
+        /// </summary>
+        public static string CONFIRMACAO_EXCLUSAO_PRODUTO {
+            get {
+                return ResourceManager.GetString("CONFIRMACAO_EXCLUSAO_PRODUTO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirma a exclusão da promoção &quot;.
+        /// </summary>
+        public static string CONFIRMACAO_EXCLUSAO_PROMOCAO {
+            get {
+                return ResourceManager.GetString("CONFIRMACAO_EXCLUSAO_PROMOCAO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to O campo &quot;{0}&quot; é obrigatório e não foi informado..
         /// </summary>
-        public static string Erro_Validacao_Campo_Obrigatorio {
+        public static string ERRO_VALIDACAO_CAMPO_OBRIGATORIO {
             get {
-                return ResourceManager.GetString("Erro_Validacao_Campo_Obrigatorio", resourceCulture);
+                return ResourceManager.GetString("ERRO_VALIDACAO_CAMPO_OBRIGATORIO", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to O tamanho máximo do campo foi excedido..
         /// </summary>
-        public static string Erro_Validacao_Tamanho_Maximo_Excedido {
+        public static string ERRO_VALIDACAO_TAMANHO_MAXIMO_EXCEDIDO {
             get {
-                return ResourceManager.GetString("Erro_Validacao_Tamanho_Maximo_Excedido", resourceCulture);
+                return ResourceManager.GetString("ERRO_VALIDACAO_TAMANHO_MAXIMO_EXCEDIDO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Produto excluído com sucesso..
+        /// </summary>
+        public static string PRODUTO_EXCLUIDO_SUCESSO {
+            get {
+                return ResourceManager.GetString("PRODUTO_EXCLUIDO_SUCESSO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Promoção excluída com sucesso..
+        /// </summary>
+        public static string PROMOCAO_EXCLUIDO_SUCESSO {
+            get {
+                return ResourceManager.GetString("PROMOCAO_EXCLUIDO_SUCESSO", resourceCulture);
             }
         }
     }

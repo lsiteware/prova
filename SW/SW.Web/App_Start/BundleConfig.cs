@@ -15,12 +15,16 @@ namespace SW.Web.App_Start
                 .Include("~/Scripts/jquery.unobtrusive-ajax.min.js")
                 .Include("~/Scripts/jquery.validate.min.js")
                 .Include("~/Scripts/jquery.validate.unobtrusive.min.js")
-                .Include("~/Scripts/bootstrap.min.js"));
+                .Include("~/Scripts/bootstrap.min.js")
+                .Include("~/Scripts/jquery.notify.min.js")
+                .Include("~/Scripts/jquery-ui-1.11.4.min.js"));
 
             BundleTable.Bundles.Add(new StyleBundle(STYLES_PATH)
                 .Include("~/Content/bootstrap.min.css")
                 .Include("~/Content/bootstrap-theme.min.css")
-                .Include("~/Content/main.css"));
+                .Include("~/Content/themes/base/all.css")
+                .Include("~/Content/main.css")
+                .Include("~/Content/ui.notify.css"));
         }
     }
 }

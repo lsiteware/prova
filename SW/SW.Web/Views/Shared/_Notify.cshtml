@@ -1,0 +1,72 @@
+﻿<div id="notifycontainer" style="display:none; z-index: 99999;">
+    <div id="theme-error" class="ui-state-error" style="padding:10px; -moz-box-shadow:0 0 6px #980000; -webkit-box-shadow:0 0 6px #980000; box-shadow:0 0 6px #980000;">
+        <a class="ui-notify-close" href="#"><span class="ui-icon ui-icon-close" style="float:right"></span></a>
+        <span style="float:left; margin:0 5px 0 0;" class="ui-icon ui-icon-alert"></span>
+        <h1>#{title}</h1>
+        <p>#{text}</p>
+    </div>
+    <div id="theme-alert" class="ui-state-highlight" style="padding:10px; -moz-box-shadow:0 0 6px #FFCC33; -webkit-box-shadow:0 0 6px #FFCC33; box-shadow:0 0 6px #FFCC33;">
+        <a class="ui-notify-close" href="#"><span class="ui-icon ui-icon-close" style="float:right"></span></a>
+        <span style="float:left; margin:0 5px 0 0;" class="ui-icon ui-icon-notice"></span>
+        <h1>#{title}</h1>
+        <p>#{text}</p>
+    </div>
+    <div id="theme-success" class="ui-state-success" style="padding:10px; -moz-box-shadow:0 0 6px #66CC33; -webkit-box-shadow:0 0 6px #66CC33; box-shadow:0 0 6px #66CC33;">
+        <a class="ui-notify-close" href="#"><span class="ui-icon ui-icon-close" style="float:right"></span></a>
+        <span style="float:left; margin:0 5px 0 0;" class="ui-icon ui-icon-check"></span>
+        <h1>#{title}</h1>
+        <p>#{text}</p>
+    </div>
+</div>
+<script type="text/javascript">
+    $notifycontainer = $("#notifycontainer").notify();
+
+    function CreateNotify(template, vars, opts) {
+        return $notifycontainer.notify("create", template, vars, opts);
+    }
+
+    function NotifyError(title, message, expires) {
+        CreateNotify("theme-error",
+        { title: title, text: message },
+        {
+            custom: true,
+            expires: expires
+        });
+    }
+
+    function NotifyAlert(title, message, expires) {
+        CreateNotify("theme-alert",
+        { title: title, text: message },
+        {
+            custom: true,
+            expires: expires
+        });
+    }
+
+    function NotifySuccess(title, message, expires) {
+        CreateNotify("theme-success",
+        { title: title, text: message },
+        {
+            custom: true,
+            expires: expires
+        });
+    }
+
+    function VerificarMensagemTempData() {
+        $.getJSON('@Url.Action("VerifyMessage", "Notify")', null, function (message) {
+            if (message) {
+                switch (message.Type) {
+                    case 'ALERT':
+                        NotifyAlert(message.Title, message.Message, message.Expires);
+                        break;
+                    case 'ERROR':
+                        NotifyError(message.Title, message.Message, message.Expires);
+                        break;
+                    case 'SUCCESS':
+                        NotifySuccess(message.Title, message.Message, message.Expires);
+                        break;
+                }
+            }
+        });
+    }
+</script>

@@ -13,16 +13,16 @@ namespace SW.Domain.Vendas.Entidades
         [NotMapped]
         public static IRepositorioPromocao Repositorio { get; set; }
 
-        [StringLength(100, ErrorMessageResourceName = "Erro_Validacao_Tamanho_Maximo_Excedido", ErrorMessageResourceType = typeof(MENSAGEM))]
-        [Required(ErrorMessageResourceName = "Erro_Validacao_Campo_Obrigatorio", ErrorMessageResourceType = typeof(MENSAGEM))]
+        [StringLength(100, ErrorMessageResourceName = "ERRO_VALIDACAO_TAMANHO_MAXIMO_EXCEDIDO", ErrorMessageResourceType = typeof(MENSAGEM))]
+        [Required(ErrorMessageResourceName = "ERRO_VALIDACAO_CAMPO_OBRIGATORIO", ErrorMessageResourceType = typeof(MENSAGEM))]
         [Display(Name = "Nome", ResourceType = typeof(PROPRIEDADE))]
         public string Nome { get; set; }
 
-        [Required(ErrorMessageResourceName = "Erro_Validacao_Campo_Obrigatorio", ErrorMessageResourceType = typeof(MENSAGEM))]
+        [Required(ErrorMessageResourceName = "ERRO_VALIDACAO_CAMPO_OBRIGATORIO", ErrorMessageResourceType = typeof(MENSAGEM))]
         [Display(Name = "QuantidadeProdutos", ResourceType = typeof(PROPRIEDADE))]
         public int QuantidadeProdutos { get; set; }
 
-        [Required(ErrorMessageResourceName = "Erro_Validacao_Campo_Obrigatorio", ErrorMessageResourceType = typeof(MENSAGEM))]
+        [Required(ErrorMessageResourceName = "ERRO_VALIDACAO_CAMPO_OBRIGATORIO", ErrorMessageResourceType = typeof(MENSAGEM))]
         [Display(Name = "TipoCobranca", ResourceType = typeof(PROPRIEDADE))]
         public PromocaoTipoCobranca TipoCobranca { get; set; }
 

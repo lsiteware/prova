@@ -39,6 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ACAO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ACAO.resx</DependentUpon>
+    </Compile>
     <Compile Include="MENSAGEM.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -57,6 +62,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ACAO.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ACAO.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="MENSAGEM.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MENSAGEM.Designer.cs</LastGenOutput>

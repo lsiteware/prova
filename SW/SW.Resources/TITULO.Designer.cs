@@ -70,6 +70,15 @@ namespace SW.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Erro.
+        /// </summary>
+        public static string ERRO {
+            get {
+                return ResourceManager.GetString("ERRO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Descrição [Esconder].
         /// </summary>
         public static string ESCONDER_DESCRICAO_PROVA {
@@ -102,6 +111,15 @@ namespace SW.Resources {
         public static string MOSTRAR_DESCRICAO_PROVA {
             get {
                 return ResourceManager.GetString("MOSTRAR_DESCRICAO_PROVA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sucesso.
+        /// </summary>
+        public static string SUCESSO {
+            get {
+                return ResourceManager.GetString("SUCESSO", resourceCulture);
             }
         }
     }

@@ -120,6 +120,9 @@
   <data name="ACOES" xml:space="preserve">
     <value>Ações</value>
   </data>
+  <data name="ERRO" xml:space="preserve">
+    <value>Erro</value>
+  </data>
   <data name="ESCONDER_DESCRICAO_PROVA" xml:space="preserve">
     <value>Descrição [Esconder]</value>
   </data>
@@ -131,5 +134,8 @@
   </data>
   <data name="MOSTRAR_DESCRICAO_PROVA" xml:space="preserve">
     <value>Descrição [Mostrar]</value>
+  </data>
+  <data name="SUCESSO" xml:space="preserve">
+    <value>Sucesso</value>
   </data>
 </root>

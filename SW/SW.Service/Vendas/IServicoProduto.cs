@@ -7,5 +7,6 @@ namespace SW.Service.Vendas
     public interface IServicoProduto : IServicoAbstrato<Produto, int>
     {
         ListagemProdutoViewModel FindListagem();
+        void ExcluirProduto(string idSerializado);
     }
 }

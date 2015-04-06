@@ -13,5 +13,15 @@ namespace SW.Service.Vendas
         {
             return Repositorio.FindListagem();
         }
+
+        public void ExcluirProduto(string idSerializado)
+        {
+            var viewModel = new ProdutoViewModel
+            {
+                IdSerializado = idSerializado
+            };
+            Repositorio.Delete(viewModel.Id)
+                .Save();
+        }
     }
 }
