@@ -250,6 +250,7 @@
     <Content Include="Views\Produto\_PartialListagem.cshtml" />
     <Content Include="Views\Shared\_Notify.cshtml" />
     <Content Include="Views\Produto\_PartialEditar.cshtml" />
+    <Content Include="Views\Promocao\_PartialEditar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

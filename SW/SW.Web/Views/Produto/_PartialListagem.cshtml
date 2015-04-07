@@ -13,7 +13,7 @@
         {
             var promocaoAtiva = prod.PromocaoAtiva == null ? "-" : prod.PromocaoAtiva.Nome;
             <tr>
-                <th><a href="javascript:void(0);" class="glyphicon glyphicon-pencil" style="cursor:pointer;" onclick="ConfiguraModalEditarProduto('@prod.IdSerializado');" data-toggle="modal" data-target="#modal-edicao"></a>&nbsp;&nbsp;<a href="javascript:void(0);" class="glyphicon glyphicon-remove" style="cursor:pointer;" onclick="ConfiguraModalConfirmacaoExcluirProduto('@prod.IdSerializado', '@prod.Nome');" data-toggle="modal" data-target="#modal-confirmacao"></a></th>
+                <th><a href="javascript:void(0);" class="glyphicon glyphicon-pencil" style="cursor:pointer;" onclick="ConfiguraModalEditarProduto(@prod.Id);" data-toggle="modal" data-target="#modal-edicao"></a>&nbsp;&nbsp;<a href="javascript:void(0);" class="glyphicon glyphicon-remove" style="cursor:pointer;" onclick="ConfiguraModalConfirmacaoExcluirProduto(@prod.Id, '@prod.Nome');" data-toggle="modal" data-target="#modal-confirmacao"></a></th>
                 <th>@prod.Nome</th>
                 <th>@prod.Preco.ToString("C", new CultureInfo("pt-BR"))</th>
                 <th>@promocaoAtiva</th>

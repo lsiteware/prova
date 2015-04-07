@@ -70,7 +70,7 @@ namespace SW.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Confirma a exclusão da promoção &quot;.
+        ///   Looks up a localized string similar to Ao excluir uma promoção ela será removida da associação a todos os produtos. Confirma a exclusão da promoção &quot;.
         /// </summary>
         public static string CONFIRMACAO_EXCLUSAO_PROMOCAO {
             get {
@@ -151,11 +151,11 @@ namespace SW.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Produto incluído com sucesso..
+        ///   Looks up a localized string similar to Produto salvo com sucesso..
         /// </summary>
-        public static string PRODUTO_INCLUIDO_SUCESSO {
+        public static string PRODUTO_SALVO_SUCESSO {
             get {
-                return ResourceManager.GetString("PRODUTO_INCLUIDO_SUCESSO", resourceCulture);
+                return ResourceManager.GetString("PRODUTO_SALVO_SUCESSO", resourceCulture);
             }
         }
         
@@ -165,6 +165,15 @@ namespace SW.Resources {
         public static string PROMOCAO_EXCLUIDO_SUCESSO {
             get {
                 return ResourceManager.GetString("PROMOCAO_EXCLUIDO_SUCESSO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Promoção salva com sucesso..
+        /// </summary>
+        public static string PROMOCAO_SALVA_SUCESSO {
+            get {
+                return ResourceManager.GetString("PROMOCAO_SALVA_SUCESSO", resourceCulture);
             }
         }
     }

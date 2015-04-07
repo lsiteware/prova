@@ -8,7 +8,7 @@ namespace SW.Service.Vendas
     {
         ListagemPromocaoViewModel FindListagem();
 
-        void ExcluirPromocao(string idSerializado);
+        void ExcluirPromocao(int id);
 
         void SalvarPromocao(PromocaoViewModel viewModel);
     }

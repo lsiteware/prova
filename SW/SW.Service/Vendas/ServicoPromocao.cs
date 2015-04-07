@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+﻿using System.Collections.Generic;
+using AutoMapper;
+using Microsoft.Practices.Unity;
 using SW.Core.Exceptions;
 using SW.Domain.Interfaces.Repositorio.Vendas;
 using SW.Domain.Vendas.Entidades;
@@ -9,21 +11,28 @@ namespace SW.Service.Vendas
 {
     public class ServicoPromocao : ServicoAbstrato<Promocao, int, IRepositorioPromocao>, IServicoPromocao
     {
+        [Dependency]
+        public IServicoProduto ServicoProduto { get; set; }
+
         public ServicoPromocao(IRepositorioPromocao repositorio) : base(repositorio) { }
 
         public ListagemPromocaoViewModel FindListagem()
         {
             return Repositorio.FindListagem();
         }
-        
-        public void ExcluirPromocao(string idSerializado)
+
+        public void ExcluirPromocao(int id)
         {
-            var viewModel = new PromocaoViewModel
-            {
-                IdSerializado = idSerializado
-            };
-            Repositorio.Delete(viewModel.Id)
+            RemoverAssociacaoPromocao(id);
+            Repositorio.Delete(id)
                 .Save();
+        }
+
+        private void RemoverAssociacaoPromocao(int id)
+        {
+            IEnumerable<Produto> listaProdutosAlterar = ServicoProduto.FindAll(p => p.PromocaoAtivaId == id);
+            listaProdutosAlterar.Each(p => p.PromocaoAtivaId = null);
+            ServicoProduto.Save();
         }
 
         public void SalvarPromocao(PromocaoViewModel viewModel)

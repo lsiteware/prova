@@ -1,0 +1,9 @@
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Resources\bin\Debug\SW.Resources.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Resources\bin\Debug\SW.Resources.pdb
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Resources\obj\Debug\SW.Resources.ACAO.resources
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Resources\obj\Debug\SW.Resources.MENSAGEM.resources
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Resources\obj\Debug\SW.Resources.PROPRIEDADE.resources
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Resources\obj\Debug\SW.Resources.TITULO.resources
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Resources\obj\Debug\SW.Resources.csproj.GenerateResource.Cache
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Resources\obj\Debug\SW.Resources.dll
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Resources\obj\Debug\SW.Resources.pdb

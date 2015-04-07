@@ -1,6 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Configuration;
-using SW.Core.Utils;
 using SW.Domain.Base;
 using SW.Resources;
 
@@ -8,15 +6,7 @@ namespace SW.Domain.Vendas.ViewModels
 {
     public class ProdutoViewModel : ViewModelValidavelBase
     {
-        public int Id
-        {
-            get
-            {
-                return string.IsNullOrWhiteSpace(IdSerializado) ? 0 : int.Parse(Encriptar.DesencriptarString(ConfigurationManager.AppSettings["ChaveCriptografia"], IdSerializado));
-            }
-        }
-
-        public string IdSerializado { get; set; }
+        public int Id { get; set; }
 
         [StringLength(100, ErrorMessageResourceName = "ERRO_VALIDACAO_TAMANHO_MAXIMO_EXCEDIDO", ErrorMessageResourceType = typeof(MENSAGEM))]
         [Required(ErrorMessageResourceName = "ERRO_VALIDACAO_CAMPO_OBRIGATORIO", ErrorMessageResourceType = typeof(MENSAGEM))]

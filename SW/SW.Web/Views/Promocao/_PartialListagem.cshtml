@@ -1,8 +1,5 @@
 ﻿@using SW.Resources
 @model ListagemPromocaoViewModel
-<div>
-    <button type="button" class="btn btn-default navbar-btn pull-right"><i class="glyphicon glyphicon-plus" style="margin-right: 10px;"></i>@ACAO.NOVA_PROMOCAO</button>
-</div>
 <table class="table table-striped table-bordered">
     <thead>
         <th>@TITULO.ACOES</th>
@@ -14,7 +11,7 @@
         @foreach (var prom in Model.Lista)
         {
             <tr>
-                <th><a href="javascript:void(0);" class="glyphicon glyphicon-pencil" style="cursor:pointer;"></a>&nbsp;&nbsp;<a href="javascript:void(0);" class="glyphicon glyphicon-remove" style="cursor:pointer;" onclick="ConfiguraModalConfirmacaoExcluirPromocao('@prom.IdSerializado', '@prom.Nome');" data-toggle="modal" data-target="#modal-confirmacao"></a></th>
+                <th><a href="javascript:void(0);" class="glyphicon glyphicon-pencil" style="cursor:pointer;" onclick="ConfiguraModalEditarPromocao(@prom.Id);" data-toggle="modal" data-target="#modal-edicao"></a>&nbsp;&nbsp;<a href="javascript:void(0);" class="glyphicon glyphicon-remove" style="cursor:pointer;" onclick="ConfiguraModalConfirmacaoExcluirPromocao(@prom.Id, '@prom.Nome');" data-toggle="modal" data-target="#modal-confirmacao"></a></th>
                 <th>@prom.Nome</th>
                 <th>@prom.QuantidadeProdutos</th>
                 <th>@prom.TipoCobranca</th>

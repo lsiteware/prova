@@ -121,7 +121,7 @@
     <value>Confirma a exclusão do produto "</value>
   </data>
   <data name="CONFIRMACAO_EXCLUSAO_PROMOCAO" xml:space="preserve">
-    <value>Confirma a exclusão da promoção "</value>
+    <value>Ao excluir uma promoção ela será removida da associação a todos os produtos. Confirma a exclusão da promoção "</value>
   </data>
   <data name="ERRO_PRODUTO_NOME_DUPLICADO" xml:space="preserve">
     <value>Existe um produto cadastrado com o nome informado. Informe outro nome.</value>
@@ -147,10 +147,13 @@
   <data name="PRODUTO_EXCLUIDO_SUCESSO" xml:space="preserve">
     <value>Produto excluído com sucesso.</value>
   </data>
-  <data name="PRODUTO_INCLUIDO_SUCESSO" xml:space="preserve">
-    <value>Produto incluído com sucesso.</value>
+  <data name="PRODUTO_SALVO_SUCESSO" xml:space="preserve">
+    <value>Produto salvo com sucesso.</value>
   </data>
   <data name="PROMOCAO_EXCLUIDO_SUCESSO" xml:space="preserve">
     <value>Promoção excluída com sucesso.</value>
+  </data>
+  <data name="PROMOCAO_SALVA_SUCESSO" xml:space="preserve">
+    <value>Promoção salva com sucesso.</value>
   </data>
 </root>

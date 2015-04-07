@@ -27,7 +27,7 @@ namespace SW.Web.Controllers.Vendas
             return View(ServicoProduto.FindListagem());
         }
 
-        public JavaScriptResult ExcluirProduto(string id)
+        public JavaScriptResult ExcluirProduto(int id)
         {
             StringBuilder scripts = new StringBuilder();
             scripts.AppendLine("VerificarMensagemTempData();");
@@ -50,10 +50,9 @@ namespace SW.Web.Controllers.Vendas
             return PartialView("_PartialEditar", new ProdutoViewModel());
         }
 
-        public ActionResult EditarProduto(string id)
+        public ActionResult EditarProduto(int id)
         {
-            var viewModel = new ProdutoViewModel { IdSerializado = id };
-            var databaseProduto = ServicoProduto.FindById(viewModel.Id);
+            var databaseProduto = ServicoProduto.FindById(id);
             CarregarListaPromocoes(databaseProduto.PromocaoAtivaId);
             return PartialView("_PartialEditar", Mapper.Map<Produto, ProdutoViewModel>(databaseProduto));
         }
@@ -72,7 +71,7 @@ namespace SW.Web.Controllers.Vendas
                 ServicoProduto.SalvarProduto(viewModel);
                 scripts.AppendLine("CarregarListagemProdutos();");
                 scripts.AppendLine("FecharModalEdicao();");
-                this.AddMenssagemSucesso(TITULO.SUCESSO, MENSAGEM.PRODUTO_INCLUIDO_SUCESSO, 3000);
+                this.AddMenssagemSucesso(TITULO.SUCESSO, MENSAGEM.PRODUTO_SALVO_SUCESSO, 3000);
             }
             catch (CwException ex)
             {

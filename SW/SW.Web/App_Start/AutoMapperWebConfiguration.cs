@@ -1,6 +1,4 @@
-﻿using System.Configuration;
-using AutoMapper;
-using SW.Core.Utils;
+﻿using AutoMapper;
 using SW.Domain.Vendas.Entidades;
 using SW.Domain.Vendas.ViewModels;
 
@@ -17,17 +15,13 @@ namespace SW.Web.App_Start
         private static void ConfigureProdutoMapping()
         {
             Mapper.CreateMap<Produto, ProdutoViewModel>()
-                .ForMember(dest => dest.Id, opt => opt.Ignore())
-                .ForMember(dest => dest.IdSerializado, opt => opt.MapFrom(p => Encriptar.EncriptarString(ConfigurationManager.AppSettings["ChaveCriptografia"], p.Id.ToString())))
                 .ForMember(dest => dest.PromocaoAtiva, opt => opt.MapFrom(p => Mapper.Map<Promocao, PromocaoViewModel>(p.PromocaoAtiva)));
             Mapper.CreateMap<ProdutoViewModel, Produto>();
         }
 
         private static void ConfigurePromocaoMapping()
         {
-            Mapper.CreateMap<Promocao, PromocaoViewModel>()
-                .ForMember(dest => dest.Id, opt => opt.Ignore())
-                .ForMember(dest => dest.IdSerializado, opt => opt.MapFrom(p => Encriptar.EncriptarString(ConfigurationManager.AppSettings["ChaveCriptografia"], p.Id.ToString())));
+            Mapper.CreateMap<Promocao, PromocaoViewModel>();
             Mapper.CreateMap<PromocaoViewModel, Promocao>();
         }
     }
