@@ -61,6 +61,15 @@ namespace SW.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Produto adicionado com sucesso..
+        /// </summary>
+        public static string CARRINHO_COMPRAS_PRODUTO_ADICIONADO_SUCESSO {
+            get {
+                return ResourceManager.GetString("CARRINHO_COMPRAS_PRODUTO_ADICIONADO_SUCESSO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Confirma a exclusão do produto &quot;.
         /// </summary>
         public static string CONFIRMACAO_EXCLUSAO_PRODUTO {
@@ -75,6 +84,15 @@ namespace SW.Resources {
         public static string CONFIRMACAO_EXCLUSAO_PROMOCAO {
             get {
                 return ResourceManager.GetString("CONFIRMACAO_EXCLUSAO_PROMOCAO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Para adicionar um produto ao carrinho a quantidade deve ser maior que 0..
+        /// </summary>
+        public static string ERRO_CARRINHO_ADICIONAR_PRODUTO_QUANTIDADE_ZERADA {
+            get {
+                return ResourceManager.GetString("ERRO_CARRINHO_ADICIONAR_PRODUTO_QUANTIDADE_ZERADA", resourceCulture);
             }
         }
         

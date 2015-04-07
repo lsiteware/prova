@@ -16,8 +16,14 @@ namespace SW.Web.Controllers.Vendas
 {
     public class PromocaoController : Controller
     {
+        #region Propriedades
+
         [Dependency]
         public IServicoPromocao ServicoPromocao { get; set; }
+
+        #endregion
+
+        #region Actions GET
 
         public ActionResult _PartialListagem()
         {
@@ -44,7 +50,7 @@ namespace SW.Web.Controllers.Vendas
 
         public ActionResult NovaPromocao()
         {
-            CarregarListaTipoCobranca(PromocaoTipoCobranca.Media);
+            CarregarListaTipoCobranca(PromocaoTipoCobranca.ValorUnico);
             return PartialView("_PartialEditar", new PromocaoViewModel());
         }
 
@@ -54,6 +60,8 @@ namespace SW.Web.Controllers.Vendas
             CarregarListaTipoCobranca(databasePromocao.TipoCobranca);
             return PartialView("_PartialEditar", Mapper.Map<Promocao, PromocaoViewModel>(databasePromocao));
         }
+
+        #endregion
 
         #region Actions POST
 
@@ -83,7 +91,7 @@ namespace SW.Web.Controllers.Vendas
         private void CarregarListaTipoCobranca(PromocaoTipoCobranca tipoCobranca)
         {
             var listaItens = new List<SelectListItem>();
-            listaItens.Add(new SelectListItem { Selected = tipoCobranca == PromocaoTipoCobranca.Media, Text = "Media", Value = "Media" });
+            listaItens.Add(new SelectListItem { Selected = tipoCobranca == PromocaoTipoCobranca.ValorUnico, Text = "ValorUnico", Value = "ValorUnico" });
             listaItens.Add(new SelectListItem { Selected = tipoCobranca == PromocaoTipoCobranca.ValorFixo, Text = "ValorFixo", Value = "ValorFixo" });
             ViewBag.ListaTipoCobranca = listaItens;
         }

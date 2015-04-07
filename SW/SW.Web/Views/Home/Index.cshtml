@@ -7,36 +7,20 @@
     <legend><h2 id="h-mostrar-descricao" style="cursor:pointer;">@TITULO.MOSTRAR_DESCRICAO_PROVA</h2></legend>
     <div id="dv-desc-prova" style="display: none;">
         <ul>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
-            <li>TEste</li>
+            <li>Todos os métodos e classes não foram simplesmente copiados, eu criei ou participei da criação dos mesmos, tirando as biblioecas prontas como JQuery, Notify e etc...</li>
+            <li>Opadrão DDD implantado pode estar incompleto pois assim que comecei a me aprofundar no mesmo eu sai da empresa</li>
+            <li>Utilizei Bootstrap, JQuery, JQuery UI, Notify e etc... para melhorar um pouco a parte visual maiss em sair do que foi solicitado</li>
+            <li>Os projetos foram criados seguindo a utilização:
+                <ul>
+                    <li><b>SW.Core</b> Funcionalidades centrais básicas utilizadas por todas as camadas</li>
+                    <li><b>SW.Domain</b> Domínio da aplicação, as entidades, ViewModels, interfaces dos repositórios assim como as validações são feitas nesta camada</li>
+                    <li><b>SW.Repository</b> Implementação dos repositórios (camada de persistencia)</li>
+                    <li><b>SW.Resources</b> Camada de resources de mensagens unificada para ser acessada por todas as demais camadas</li>
+                    <li><b>SW.Service</b> Camada de serviço que contem as regras de negódio e chama e interage com as validações da camada de domínio</li>
+                    <li><b>SW.Web</b> Camada de apresentação</li>
+                </ul>
+            </li>
+            <li>A camada de teste unitario não foi construída por não existirem regras de negocio complexas para serem testadas e garantidas</li>
         </ul>
     </div>
 </fieldset>
@@ -54,6 +38,14 @@
         <button type="button" class="btn btn-default navbar-btn pull-right" onclick="ConfiguraModalIncluirPromocao();" data-toggle="modal" data-target="#modal-edicao"><i class="glyphicon glyphicon-plus" style="margin-right: 10px;"></i>@ACAO.NOVA_PROMOCAO</button>
     </div>
     <div id="dv-listagem-promocoes">
+    </div>
+</fieldset>
+<fieldset>
+    <legend><h3>@TITULO.CARRINHO_COMPRAS</h3></legend>
+    <div>
+        <button type="button" class="btn btn-default navbar-btn pull-right" onclick="ConfiguraModalIncluirProdutosCarrinhoCompras();" data-toggle="modal" data-target="#modal-edicao"><i class="glyphicon glyphicon-plus" style="margin-right: 10px;"></i>@ACAO.ADICIONAR_PRODUTO_CARRINHO</button>
+    </div>
+    <div id="dv-carrinho-compras">
     </div>
 </fieldset>
 <!-- Modal de edição genérico -->
@@ -109,6 +101,12 @@
         InitLoading($("#dv-listagem-promocoes"));
         $("#dv-listagem-promocoes").load('@Url.Action("_PartialListagem", "Promocao")', null, function () {
             $("#dv-listagem-promocoes div.big-loading").remove();
+        });
+    }
+    function CarregarCarrinhoCompras() {
+        InitLoading($("#dv-carrinho-compras"));
+        $("#dv-carrinho-compras").load('@Url.Action("_PartialListagem", "CarrinhoCompras")', null, function () {
+            $("#dv-carrinho-compras div.big-loading").remove();
         });
     }
     // Modal de edição
@@ -171,8 +169,31 @@
             data: { id: id }
         });
     }
-    $(document).ready(function () {
-        $("#h-mostrar-descricao").click(function () {
+    // Modal de adição de itens ao carrinho
+    function ConfiguraModalIncluirProdutosCarrinhoCompras() {
+        InitLoading($("#modal-edicao-body"));
+        $("#modal-edicao-body").load('@Url.Action("AdicionarProduto", "CarrinhoCompras")');
+        $("#form-edicao").attr("action", '@Url.Action("AdicionarProduto", "CarrinhoCompras")');
+    }
+
+    // Modal de exclusão de um item do carrinho
+    function ConfiguraModalConfirmacaoExcluirItemCarrinho(id, nome) {
+        $("#btn-confirmacao").unbind('click');
+        $("#btn-confirmacao").click(function () {
+            ConfirmacaoExcluirProdutoCarrinho(id);
+        });
+        $("#modal-confirmacao-body").html('@MENSAGEM.CONFIRMACAO_EXCLUSAO_PRODUTO' + nome + "\"?");
+    }
+    function ConfirmacaoExcluirProdutoCarrinho(id) {
+        var url = '@Url.Action("ExcluirProdutoCarrinho", "CarrinhoCompras")';
+        $.ajax({
+            type: "GET",
+            url: url,
+            data: { id: id }
+        });
+    }
+    $(document).ready(function() {
+        $("#h-mostrar-descricao").click(function() {
             if ($('#dv-desc-prova').css('display') == 'none') {
                 $(this).html('@TITULO.ESCONDER_DESCRICAO_PROVA');
             } else {

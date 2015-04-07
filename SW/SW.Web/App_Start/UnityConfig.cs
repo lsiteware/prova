@@ -37,6 +37,7 @@ namespace SW.Web.App_Start
             // Serviços
             container.RegisterType<IServicoProduto, ServicoProduto>();
             container.RegisterType<IServicoPromocao, ServicoPromocao>();
+            container.RegisterType<IServicoCarrinhoCompras, ServicoCarrinhoCompras>();
 
             // Repositórios das entidades
             Produto.Repositorio = container.Resolve<IRepositorioProduto>();

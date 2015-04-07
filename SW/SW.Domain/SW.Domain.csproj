@@ -63,19 +63,17 @@
     <Compile Include="Interfaces\Repositorio\Abstrato\IRepositorioAbstratoLeitura.cs" />
     <Compile Include="Interfaces\Repositorio\Vendas\IRepositorioProduto.cs" />
     <Compile Include="Interfaces\Repositorio\Vendas\IRepositorioPromocao.cs" />
-    <Compile Include="Migrations\201504052136433_initial.cs" />
-    <Compile Include="Migrations\201504052136433_initial.Designer.cs">
-      <DependentUpon>201504052136433_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504060214175_valor_fixo_promocao.cs" />
-    <Compile Include="Migrations\201504060214175_valor_fixo_promocao.Designer.cs">
-      <DependentUpon>201504060214175_valor_fixo_promocao.cs</DependentUpon>
+    <Compile Include="Migrations\201504070552343_inicial.cs" />
+    <Compile Include="Migrations\201504070552343_inicial.Designer.cs">
+      <DependentUpon>201504070552343_inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vendas\Enumeradores\PromocaoTipoCobranca.cs" />
     <Compile Include="Vendas\Entidades\Produto.cs" />
     <Compile Include="Vendas\Entidades\Promocao.cs" />
+    <Compile Include="Vendas\ViewModels\CarrinhoComprasItemViewModel.cs" />
+    <Compile Include="Vendas\ViewModels\CarrinhoComprasViewModel.cs" />
     <Compile Include="Vendas\ViewModels\ListagemPromocaoViewModel.cs" />
     <Compile Include="Vendas\ViewModels\ListagemProdutoViewModel.cs" />
     <Compile Include="Vendas\ViewModels\ProdutoViewModel.cs" />
@@ -95,13 +93,9 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201504052136433_initial.resx">
-      <DependentUpon>201504052136433_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504060214175_valor_fixo_promocao.resx">
-      <DependentUpon>201504060214175_valor_fixo_promocao.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201504070552343_inicial.resx">
+      <DependentUpon>201504070552343_inicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

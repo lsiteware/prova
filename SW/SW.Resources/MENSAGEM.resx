@@ -117,11 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CARRINHO_COMPRAS_PRODUTO_ADICIONADO_SUCESSO" xml:space="preserve">
+    <value>Produto adicionado com sucesso.</value>
+  </data>
   <data name="CONFIRMACAO_EXCLUSAO_PRODUTO" xml:space="preserve">
     <value>Confirma a exclusão do produto "</value>
   </data>
   <data name="CONFIRMACAO_EXCLUSAO_PROMOCAO" xml:space="preserve">
     <value>Ao excluir uma promoção ela será removida da associação a todos os produtos. Confirma a exclusão da promoção "</value>
+  </data>
+  <data name="ERRO_CARRINHO_ADICIONAR_PRODUTO_QUANTIDADE_ZERADA" xml:space="preserve">
+    <value>Para adicionar um produto ao carrinho a quantidade deve ser maior que 0.</value>
   </data>
   <data name="ERRO_PRODUTO_NOME_DUPLICADO" xml:space="preserve">
     <value>Existe um produto cadastrado com o nome informado. Informe outro nome.</value>

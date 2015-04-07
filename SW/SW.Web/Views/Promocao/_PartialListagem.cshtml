@@ -3,18 +3,18 @@
 <table class="table table-striped table-bordered">
     <thead>
         <th>@TITULO.ACOES</th>
-        <th>@PROPRIEDADE.Nome</th>
-        <th>@PROPRIEDADE.QuantidadeProdutos</th>
-        <th>@PROPRIEDADE.TipoCobranca</th>
+        <th>@PROPRIEDADE.NOME</th>
+        <th>@PROPRIEDADE.QUANTIDADE_PRODUTOS</th>
+        <th>@PROPRIEDADE.TIPO_COBRANCA</th>
     </thead>
     <tbody>
         @foreach (var prom in Model.Lista)
         {
             <tr>
-                <th><a href="javascript:void(0);" class="glyphicon glyphicon-pencil" style="cursor:pointer;" onclick="ConfiguraModalEditarPromocao(@prom.Id);" data-toggle="modal" data-target="#modal-edicao"></a>&nbsp;&nbsp;<a href="javascript:void(0);" class="glyphicon glyphicon-remove" style="cursor:pointer;" onclick="ConfiguraModalConfirmacaoExcluirPromocao(@prom.Id, '@prom.Nome');" data-toggle="modal" data-target="#modal-confirmacao"></a></th>
-                <th>@prom.Nome</th>
-                <th>@prom.QuantidadeProdutos</th>
-                <th>@prom.TipoCobranca</th>
+                <td><a href="javascript:void(0);" class="glyphicon glyphicon-pencil" style="cursor:pointer;" onclick="ConfiguraModalEditarPromocao(@prom.Id);" data-toggle="modal" data-target="#modal-edicao"></a>&nbsp;&nbsp;<a href="javascript:void(0);" class="glyphicon glyphicon-remove" style="cursor:pointer;" onclick="ConfiguraModalConfirmacaoExcluirPromocao(@prom.Id, '@prom.Nome');" data-toggle="modal" data-target="#modal-confirmacao"></a></td>
+                <td>@prom.Nome</td>
+                <td>@prom.QuantidadeProdutos</td>
+                <td>@prom.TipoCobranca</td>
             </tr>
         }
     </tbody>

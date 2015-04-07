@@ -14,11 +14,15 @@ namespace SW.Web.Controllers.Vendas
 {
     public class ProdutoController : Controller
     {
+        #region Propriedades
+
         [Dependency]
         public IServicoProduto ServicoProduto { get; set; }
 
         [Dependency]
         public IServicoPromocao ServicoPromocao { get; set; }
+
+        #endregion
 
         #region Actions GET
 

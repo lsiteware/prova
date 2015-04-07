@@ -157,6 +157,7 @@
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="Controllers\NotifyController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Vendas\CarrinhoComprasController.cs" />
     <Compile Include="Controllers\Vendas\ProdutoController.cs" />
     <Compile Include="Controllers\Vendas\PromocaoController.cs" />
     <Compile Include="Extensions\ControllerExtensions.cs" />
@@ -251,6 +252,8 @@
     <Content Include="Views\Shared\_Notify.cshtml" />
     <Content Include="Views\Produto\_PartialEditar.cshtml" />
     <Content Include="Views\Promocao\_PartialEditar.cshtml" />
+    <Content Include="Views\CarrinhoCompras\_PartialListagem.cshtml" />
+    <Content Include="Views\CarrinhoCompras\_PartialEditar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

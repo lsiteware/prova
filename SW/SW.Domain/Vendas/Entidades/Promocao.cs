@@ -17,18 +17,18 @@ namespace SW.Domain.Vendas.Entidades
 
         [StringLength(100, ErrorMessageResourceName = "ERRO_VALIDACAO_TAMANHO_MAXIMO_EXCEDIDO", ErrorMessageResourceType = typeof(MENSAGEM))]
         [Required(ErrorMessageResourceName = "ERRO_VALIDACAO_CAMPO_OBRIGATORIO", ErrorMessageResourceType = typeof(MENSAGEM))]
-        [Display(Name = "Nome", ResourceType = typeof(PROPRIEDADE))]
+        [Display(Name = "NOME", ResourceType = typeof(PROPRIEDADE))]
         public string Nome { get; set; }
 
         [Required(ErrorMessageResourceName = "ERRO_VALIDACAO_CAMPO_OBRIGATORIO", ErrorMessageResourceType = typeof(MENSAGEM))]
-        [Display(Name = "QuantidadeProdutos", ResourceType = typeof(PROPRIEDADE))]
+        [Display(Name = "QUANTIDADE_PRODUTOS", ResourceType = typeof(PROPRIEDADE))]
         public int QuantidadeProdutos { get; set; }
 
         [Required(ErrorMessageResourceName = "ERRO_VALIDACAO_CAMPO_OBRIGATORIO", ErrorMessageResourceType = typeof(MENSAGEM))]
-        [Display(Name = "TipoCobranca", ResourceType = typeof(PROPRIEDADE))]
+        [Display(Name = "TIPO_COBRANCA", ResourceType = typeof(PROPRIEDADE))]
         public PromocaoTipoCobranca TipoCobranca { get; set; }
 
-        [Display(Name = "ValorFixo", ResourceType = typeof(PROPRIEDADE))]
+        [Display(Name = "VALOR_FIXO", ResourceType = typeof(PROPRIEDADE))]
         public decimal? ValorFixo { get; set; }
 
         public override bool IsValid()
@@ -66,7 +66,7 @@ namespace SW.Domain.Vendas.Entidades
 
         public bool ValidarTipoCobrancaValorFixo()
         {
-            return TipoCobranca == PromocaoTipoCobranca.Media ||
+            return TipoCobranca == PromocaoTipoCobranca.ValorUnico ||
                    (TipoCobranca == PromocaoTipoCobranca.ValorFixo && ValorFixo > 0);
         }
     }

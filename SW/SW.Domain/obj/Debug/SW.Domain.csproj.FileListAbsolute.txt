@@ -15,8 +15,7 @@ C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\AutoMapper.Net4.
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\EntityFramework.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\obj\Debug\SW.Domain.csprojResolveAssemblyReference.cache
-C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\obj\Debug\SW.Domain.Migrations.initial.resources
-C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\obj\Debug\SW.Domain.Migrations.valor_fixo_promocao.resources
+C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\obj\Debug\SW.Domain.Migrations.inicial.resources
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\obj\Debug\SW.Domain.csproj.GenerateResource.Cache
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\obj\Debug\SW.Domain.dll
 C:\Users\Leonardo\Documents\GitHub\prova\SW\SW.Domain\obj\Debug\SW.Domain.pdb

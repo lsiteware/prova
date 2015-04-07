@@ -3,7 +3,7 @@ namespace SW.Domain.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initial : DbMigration
+    public partial class inicial : DbMigration
     {
         public override void Up()
         {
@@ -28,6 +28,7 @@ namespace SW.Domain.Migrations
                         Nome = c.String(nullable: false, maxLength: 100),
                         QuantidadeProdutos = c.Int(nullable: false),
                         TipoCobranca = c.Int(nullable: false),
+                        ValorFixo = c.Decimal(precision: 18, scale: 2),
                     })
                 .PrimaryKey(t => t.Id);
             

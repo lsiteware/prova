@@ -70,6 +70,15 @@ namespace SW.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Carrinho de compras.
+        /// </summary>
+        public static string CARRINHO_COMPRAS {
+            get {
+                return ResourceManager.GetString("CARRINHO_COMPRAS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Erro.
         /// </summary>
         public static string ERRO {

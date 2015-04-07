@@ -120,6 +120,9 @@
   <data name="ACOES" xml:space="preserve">
     <value>Ações</value>
   </data>
+  <data name="CARRINHO_COMPRAS" xml:space="preserve">
+    <value>Carrinho de compras</value>
+  </data>
   <data name="ERRO" xml:space="preserve">
     <value>Erro</value>
   </data>

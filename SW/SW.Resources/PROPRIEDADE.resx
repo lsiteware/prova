@@ -117,22 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Nome" xml:space="preserve">
+  <data name="ITEM" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="NOME" xml:space="preserve">
     <value>Nome</value>
   </data>
-  <data name="Preco" xml:space="preserve">
+  <data name="PRECO" xml:space="preserve">
     <value>Preço</value>
   </data>
-  <data name="PromocaoAtiva" xml:space="preserve">
+  <data name="PROMOCAO" xml:space="preserve">
+    <value>Promoção</value>
+  </data>
+  <data name="PROMOCAO_ATIVA" xml:space="preserve">
     <value>Promoção ativa</value>
   </data>
-  <data name="QuantidadeProdutos" xml:space="preserve">
+  <data name="QUANTIDADE" xml:space="preserve">
+    <value>Quantidade</value>
+  </data>
+  <data name="QUANTIDADE_PRODUTOS" xml:space="preserve">
     <value>Quantidade de produtos</value>
   </data>
-  <data name="TipoCobranca" xml:space="preserve">
+  <data name="TIPO_COBRANCA" xml:space="preserve">
     <value>Tipo de cobrança</value>
   </data>
-  <data name="ValorFixo" xml:space="preserve">
+  <data name="VALOR_FIXO" xml:space="preserve">
     <value>Valor fixo</value>
+  </data>
+  <data name="VALOR_TOTAL" xml:space="preserve">
+    <value>Valor total</value>
   </data>
 </root>

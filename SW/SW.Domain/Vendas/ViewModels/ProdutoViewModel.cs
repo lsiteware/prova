@@ -10,14 +10,14 @@ namespace SW.Domain.Vendas.ViewModels
 
         [StringLength(100, ErrorMessageResourceName = "ERRO_VALIDACAO_TAMANHO_MAXIMO_EXCEDIDO", ErrorMessageResourceType = typeof(MENSAGEM))]
         [Required(ErrorMessageResourceName = "ERRO_VALIDACAO_CAMPO_OBRIGATORIO", ErrorMessageResourceType = typeof(MENSAGEM))]
-        [Display(Name = "Nome", ResourceType = typeof(PROPRIEDADE))]
+        [Display(Name = "NOME", ResourceType = typeof(PROPRIEDADE))]
         public string Nome { get; set; }
 
         [Required(ErrorMessageResourceName = "ERRO_VALIDACAO_CAMPO_OBRIGATORIO", ErrorMessageResourceType = typeof(MENSAGEM))]
-        [Display(Name = "Preco", ResourceType = typeof(PROPRIEDADE))]
+        [Display(Name = "PRECO", ResourceType = typeof(PROPRIEDADE))]
         public decimal Preco { get; set; }
 
-        [Display(Name = "PromocaoAtiva", ResourceType = typeof(PROPRIEDADE))]
+        [Display(Name = "PROMOCAO_ATIVA", ResourceType = typeof(PROPRIEDADE))]
         public int? PromocaoAtivaId { get; set; }
 
         public virtual PromocaoViewModel PromocaoAtiva { get; set; }

@@ -61,6 +61,15 @@ namespace SW.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Adicionar produto ao carrinho.
+        /// </summary>
+        public static string ADICIONAR_PRODUTO_CARRINHO {
+            get {
+                return ResourceManager.GetString("ADICIONAR_PRODUTO_CARRINHO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancelar.
         /// </summary>
         public static string CANCELAR {

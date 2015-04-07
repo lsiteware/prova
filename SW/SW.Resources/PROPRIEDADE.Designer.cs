@@ -61,56 +61,92 @@ namespace SW.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Item.
+        /// </summary>
+        public static string ITEM {
+            get {
+                return ResourceManager.GetString("ITEM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nome.
         /// </summary>
-        public static string Nome {
+        public static string NOME {
             get {
-                return ResourceManager.GetString("Nome", resourceCulture);
+                return ResourceManager.GetString("NOME", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Preço.
         /// </summary>
-        public static string Preco {
+        public static string PRECO {
             get {
-                return ResourceManager.GetString("Preco", resourceCulture);
+                return ResourceManager.GetString("PRECO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Promoção.
+        /// </summary>
+        public static string PROMOCAO {
+            get {
+                return ResourceManager.GetString("PROMOCAO", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Promoção ativa.
         /// </summary>
-        public static string PromocaoAtiva {
+        public static string PROMOCAO_ATIVA {
             get {
-                return ResourceManager.GetString("PromocaoAtiva", resourceCulture);
+                return ResourceManager.GetString("PROMOCAO_ATIVA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quantidade.
+        /// </summary>
+        public static string QUANTIDADE {
+            get {
+                return ResourceManager.GetString("QUANTIDADE", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Quantidade de produtos.
         /// </summary>
-        public static string QuantidadeProdutos {
+        public static string QUANTIDADE_PRODUTOS {
             get {
-                return ResourceManager.GetString("QuantidadeProdutos", resourceCulture);
+                return ResourceManager.GetString("QUANTIDADE_PRODUTOS", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Tipo de cobrança.
         /// </summary>
-        public static string TipoCobranca {
+        public static string TIPO_COBRANCA {
             get {
-                return ResourceManager.GetString("TipoCobranca", resourceCulture);
+                return ResourceManager.GetString("TIPO_COBRANCA", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Valor fixo.
         /// </summary>
-        public static string ValorFixo {
+        public static string VALOR_FIXO {
             get {
-                return ResourceManager.GetString("ValorFixo", resourceCulture);
+                return ResourceManager.GetString("VALOR_FIXO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Valor total.
+        /// </summary>
+        public static string VALOR_TOTAL {
+            get {
+                return ResourceManager.GetString("VALOR_TOTAL", resourceCulture);
             }
         }
     }
