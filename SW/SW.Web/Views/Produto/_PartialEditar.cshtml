@@ -1,0 +1,25 @@
+﻿@model ProdutoViewModel
+@Html.HiddenFor(m => m.IdSerializado)
+<div class="row" style="margin-bottom: 10px;">
+    <div class="col-md-1"></div>
+    <div class="col-md-4 text-right">@Html.LabelFor(m => m.Nome)</div>
+    <div class="col-md-6">@Html.TextBoxFor(m => m.Nome, new { style = "width: 100%;" })</div>
+    <div class="col-md-1"></div>
+</div>
+<div class="row" style="margin-bottom: 10px;">
+    <div class="col-md-1"></div>
+    <div class="col-md-4 text-right">@Html.LabelFor(m => m.Preco)</div>
+    <div class="col-md-6">@Html.TextBoxFor(m => m.Preco, new { style = "width: 100%;", id="preco-produto" })</div>
+    <div class="col-md-1"></div>
+</div>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-4 text-right">@Html.LabelFor(m => m.PromocaoAtiva)</div>
+    <div class="col-md-6">@Html.DropDownListFor(m => m.PromocaoAtivaId, ViewBag.ListaPromocoes as IEnumerable<SelectListItem>, "", new{ style="height: 26px; width: 100%;" })</div>
+    <div class="col-md-1"></div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#preco-produto").maskMoney({ prefix: 'R$ ', allowNegative: false, thousands: '.', decimal: ',', affixesStay: false });
+    });
+</script>

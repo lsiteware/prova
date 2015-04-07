@@ -79,6 +79,51 @@ namespace SW.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Existe um produto cadastrado com o nome informado. Informe outro nome..
+        /// </summary>
+        public static string ERRO_PRODUTO_NOME_DUPLICADO {
+            get {
+                return ResourceManager.GetString("ERRO_PRODUTO_NOME_DUPLICADO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to O preço do produto deve ser maior que 0..
+        /// </summary>
+        public static string ERRO_PRODUTO_VALOR_ZERADO {
+            get {
+                return ResourceManager.GetString("ERRO_PRODUTO_VALOR_ZERADO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Existe uma promoção cadastrada com o nome informado. Informe outro nome..
+        /// </summary>
+        public static string ERRO_PROMOCAO_NOME_DUPLICADO {
+            get {
+                return ResourceManager.GetString("ERRO_PROMOCAO_NOME_DUPLICADO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A quantidade de  produtos deve ser maior que 0..
+        /// </summary>
+        public static string ERRO_PROMOCAO_QUANTIDADE_PRODUTOS_ZERADO {
+            get {
+                return ResourceManager.GetString("ERRO_PROMOCAO_QUANTIDADE_PRODUTOS_ZERADO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Para o tipo de cobrança &quot;ValorFixo&quot; o valor fixo deve ser maior que 0..
+        /// </summary>
+        public static string ERRO_PROMOCAO_VALOR_FIXO_ZERADO {
+            get {
+                return ResourceManager.GetString("ERRO_PROMOCAO_VALOR_FIXO_ZERADO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to O campo &quot;{0}&quot; é obrigatório e não foi informado..
         /// </summary>
         public static string ERRO_VALIDACAO_CAMPO_OBRIGATORIO {
@@ -102,6 +147,15 @@ namespace SW.Resources {
         public static string PRODUTO_EXCLUIDO_SUCESSO {
             get {
                 return ResourceManager.GetString("PRODUTO_EXCLUIDO_SUCESSO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Produto incluído com sucesso..
+        /// </summary>
+        public static string PRODUTO_INCLUIDO_SUCESSO {
+            get {
+                return ResourceManager.GetString("PRODUTO_INCLUIDO_SUCESSO", resourceCulture);
             }
         }
         

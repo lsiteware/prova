@@ -66,6 +66,10 @@
     <Compile Include="Vendas\ServicoProduto.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SW.Core\SW.Core.csproj">
+      <Project>{C225E9EE-AEBA-4EC6-94B6-729CEF024F6D}</Project>
+      <Name>SW.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SW.Domain\SW.Domain.csproj">
       <Project>{a0f5c0a1-f5ef-430d-986b-1e85e61df4f5}</Project>
       <Name>SW.Domain</Name>

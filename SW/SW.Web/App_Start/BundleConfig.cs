@@ -17,7 +17,8 @@ namespace SW.Web.App_Start
                 .Include("~/Scripts/jquery.validate.unobtrusive.min.js")
                 .Include("~/Scripts/bootstrap.min.js")
                 .Include("~/Scripts/jquery.notify.min.js")
-                .Include("~/Scripts/jquery-ui-1.11.4.min.js"));
+                .Include("~/Scripts/jquery-ui-1.11.4.min.js")
+                .Include("~/Scripts/jquery.maskMoney.js"));
 
             BundleTable.Bundles.Add(new StyleBundle(STYLES_PATH)
                 .Include("~/Content/bootstrap.min.css")

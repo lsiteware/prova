@@ -95,5 +95,14 @@ namespace SW.Resources {
                 return ResourceManager.GetString("NOVO_PRODUTO", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Salvar.
+        /// </summary>
+        public static string SALVAR {
+            get {
+                return ResourceManager.GetString("SALVAR", resourceCulture);
+            }
+        }
     }
 }

@@ -42,6 +42,9 @@
 </fieldset>
 <fieldset>
     <legend><h3>@TITULO.LISTAGEM_PRODUTOS</h3></legend>
+    <div>
+        <button type="button" class="btn btn-default navbar-btn pull-right" onclick="ConfiguraModalIncluirProduto();" data-toggle="modal" data-target="#modal-edicao"><i class="glyphicon glyphicon-plus" style="margin-right: 10px;"></i>@ACAO.NOVO_PRODUTO</button>
+    </div>
     <div id="dv-listagem-produtos">
     </div>
 </fieldset>
@@ -50,6 +53,26 @@
     <div id="dv-listagem-promocoes">
     </div>
 </fieldset>
+<!-- Modal de edição genérico -->
+<div class="modal fade" id="modal-edicao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    @using (Ajax.BeginForm(null, null, null, new AjaxOptions { HttpMethod = "POST" }, new { id = "form-edicao" }))
+    {
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-edicao-titulo"></h4>
+                </div>
+                <div id="modal-edicao-body" class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btn-confirmacao-editar" class="btn btn-primary btn-success" onclick="$('#form-edicao').submit();">@ACAO.SALVAR</button>
+                    <button type="button" class="btn btn-default btn-danger" data-dismiss="modal">@ACAO.CANCELAR</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
 <!-- Modal de confirmação genérico -->
 <div class="modal fade" id="modal-confirmacao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -68,6 +91,7 @@
     </div>
 </div>
 <script type="text/javascript">
+    // Carga das listagens dinamicamente
     function InitLoading(container) {
         $(container).empty();
         $(container).append("<div class='big-loading'></div>");
@@ -84,6 +108,23 @@
             $("#dv-listagem-promocoes div.big-loading").remove();
         });
     }
+    // Modal de edição
+    function FecharModalEdicao() {
+        $("#modal-edicao").modal('hide');
+    }
+    // Modal para cadastro de produto
+    function ConfiguraModalIncluirProduto() {
+        InitLoading($("#modal-edicao-body"));
+        $("#modal-edicao-body").load('@Url.Action("NovoProduto", "Produto")');
+        $("#form-edicao").attr("action", '@Url.Action("SalvarProduto", "Produto")');
+    }
+    // Modal para edição de produto
+    function ConfiguraModalEditarProduto(id) {
+        InitLoading($("#modal-edicao-body"));
+        $("#modal-edicao-body").load('@Url.Action("EditarProduto", "Produto")' + '?id=' + id);
+        $("#form-edicao").attr("action", '@Url.Action("SalvarProduto", "Produto")');
+    }
+    // Modal de confirmação para exclusão de produtos
     function ConfiguraModalConfirmacaoExcluirProduto(id, nome) {
         $("#btn-confirmacao").unbind('click');
         $("#btn-confirmacao").click(function () {
@@ -99,6 +140,7 @@
             data: { id: id }
         });
     }
+    // Modal de confirmação para exclusão de promoções
     function ConfiguraModalConfirmacaoExcluirPromocao(id, nome) {
         $("#btn-confirmacao").unbind('click');
         $("#btn-confirmacao").click(function () {

@@ -228,6 +228,7 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.min.js" />
+    <Content Include="Scripts\jquery.maskMoney.js" />
     <Content Include="Scripts\jquery.notify.min.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
@@ -248,6 +249,7 @@
     <Content Include="Views\Promocao\_PartialListagem.cshtml" />
     <Content Include="Views\Produto\_PartialListagem.cshtml" />
     <Content Include="Views\Shared\_Notify.cshtml" />
+    <Content Include="Views\Produto\_PartialEditar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

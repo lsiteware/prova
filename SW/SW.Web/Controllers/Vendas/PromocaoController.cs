@@ -26,11 +26,11 @@ namespace SW.Web.Controllers.Vendas
             try
             {
                 ServicoPromocao.ExcluirPromocao(id);
-                this.AddMessageSuccess(TITULO.SUCESSO, MENSAGEM.PRODUTO_EXCLUIDO_SUCESSO, 3000);
+                this.AddMenssagemSucesso(TITULO.SUCESSO, MENSAGEM.PRODUTO_EXCLUIDO_SUCESSO, 3000);
             }
             catch (Exception ex)
             {
-                this.AddMessageError(TITULO.ERRO, ex.Message, 3000);
+                this.AddMenssagemErro(TITULO.ERRO, ex.Message, 3000);
             }
             return new JavaScriptResult { Script = scripts.ToString() };
         }

@@ -1,5 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 using SW.Domain.Base;
 using SW.Domain.Interfaces.Repositorio.Vendas;
 using SW.Resources;
@@ -25,5 +27,34 @@ namespace SW.Domain.Vendas.Entidades
         public int? PromocaoAtivaId { get; set; }
 
         public virtual Promocao PromocaoAtiva { get; set; }
+
+        public override bool IsValid()
+        {
+            return !MensagensErro().Any();
+        }
+
+        public override IEnumerable<string> MensagensErro()
+        {
+            var errosValidacao = new List<string>();
+            if (!ValidarDuplicidadeNome())
+            {
+                errosValidacao.Add(MENSAGEM.ERRO_PRODUTO_NOME_DUPLICADO);
+            }
+            if (!ValidarPreco())
+            {
+                errosValidacao.Add(MENSAGEM.ERRO_PRODUTO_VALOR_ZERADO);
+            }
+            return errosValidacao;
+        }
+
+        public bool ValidarDuplicidadeNome()
+        {
+            return !Repositorio.FindAll(p => p.Nome == this.Nome && p.Id != this.Id).Any();
+        }
+
+        public bool ValidarPreco()
+        {
+            return Preco > 0;
+        }
     }
 }

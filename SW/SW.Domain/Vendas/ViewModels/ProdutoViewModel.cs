@@ -1,11 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Configuration;
 using SW.Core.Utils;
+using SW.Domain.Base;
 using SW.Resources;
 
 namespace SW.Domain.Vendas.ViewModels
 {
-    public class ProdutoViewModel
+    public class ProdutoViewModel : ViewModelValidavelBase
     {
         public int Id
         {

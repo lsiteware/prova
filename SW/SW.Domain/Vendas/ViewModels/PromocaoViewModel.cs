@@ -1,12 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Configuration;
 using SW.Core.Utils;
+using SW.Domain.Base;
 using SW.Domain.Vendas.Enumeradores;
 using SW.Resources;
 
 namespace SW.Domain.Vendas.ViewModels
 {
-    public class PromocaoViewModel
+    public class PromocaoViewModel : ViewModelValidavelBase
     {
         public int Id
         {

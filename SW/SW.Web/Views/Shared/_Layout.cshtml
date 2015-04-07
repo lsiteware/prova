@@ -9,6 +9,15 @@
     @Styles.Render(BundleConfig.STYLES_PATH)
     @Scripts.Render(BundleConfig.SCRIPTS_PATH)
     @Html.Partial("_Notify")
+    <style type="text/css">
+        label {
+            width: 100%;
+        }
+
+            label::after {
+                content: ": ";
+            }
+    </style>
 </head>
 <body lang="pt-BR">
     <div class="container">

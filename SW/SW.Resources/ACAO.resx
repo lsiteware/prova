@@ -129,4 +129,7 @@
   <data name="NOVO_PRODUTO" xml:space="preserve">
     <value>Novo produto</value>
   </data>
+  <data name="SALVAR" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
 </root>

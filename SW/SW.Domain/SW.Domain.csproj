@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\ViewModelValidavelBase.cs" />
     <Compile Include="Context\SwDbContext.cs" />
     <Compile Include="Base\EntidadeBase.cs" />
     <Compile Include="Interfaces\Repositorio\Abstrato\IRepositorioAbstrato.cs" />
